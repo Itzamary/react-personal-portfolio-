@@ -12,7 +12,7 @@ function Header(props) {
     console.log(categories, 'header categories')
 
     return (
-        <header>
+        <header className="flex-row px-1">
             <h1>Itzamary Jimenez</h1>
             <Nav 
                 categories={categories}
