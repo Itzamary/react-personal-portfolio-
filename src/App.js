@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import Header from './components/Header';
+import Project from './components/Project';
 import './App.css';
 
 
@@ -14,6 +15,7 @@ function App() {
   console.log(categories, 'app categories')
 
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
+  console.log(currentCategory);
   
   return (
     <div>
@@ -22,6 +24,10 @@ function App() {
         setCurrentCategory={setCurrentCategory}
         currentCategory={currentCategory}
       ></Header>
+      <main>
+        <Project currentCategory={currentCategory}></Project>
+
+      </main>
       
     </div>
   );
