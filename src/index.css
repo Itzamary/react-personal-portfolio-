@@ -56,6 +56,16 @@ header {
 margin:0 30px 0 30px;
 }
 
+main {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.my-5 {
+    word-wrap: break-word;
+}
+
 .navActive {
   color: var(--primary);
 }
+
