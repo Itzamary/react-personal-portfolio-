@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import Header from './components/Header';
 import Project from './components/Project';
+import About from './components/About';
 import './App.css';
 
 
@@ -25,8 +26,9 @@ function App() {
         currentCategory={currentCategory}
       ></Header>
       <main>
+       
         <Project currentCategory={currentCategory}></Project>
-
+        <About currentCategory={currentCategory}></About>
       </main>
       
     </div>
