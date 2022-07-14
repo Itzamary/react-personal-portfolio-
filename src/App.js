@@ -15,10 +15,9 @@ function App() {
     { name: "Contact"},
     { name: "Resume"},
   ]);
-  console.log(categories, 'app categories')
 
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
-  console.log(currentCategory);
+  console.log(currentCategory, 'currentCategoryApp');
 
   const [contactSelected, setContactSelected] = useState();
   

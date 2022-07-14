@@ -11,7 +11,6 @@ function Header(props) {
         contactSelected,
         setContactSelected
     } = props
-    console.log(categories, 'header categories')
 
     return (
         <header className="flex-row px-1">
