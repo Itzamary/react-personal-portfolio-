@@ -1,8 +1,9 @@
 import React, {useState} from 'react';
 import Header from './components/Header';
-import Project from './components/Project';
+// import Project from './components/Project';
 import About from './components/About';
 import ContactForm from './components/Contact';
+import Resume from './components/Resume';
 import './App.css';
 
 
@@ -36,13 +37,9 @@ function App() {
               <About currentCategory={currentCategory}></About>
             </>
           ) : (
-              <ContactForm></ContactForm>
+            <Resume></Resume>
         )}
-       
-        
-        
         <ContactForm></ContactForm>
-        <Project currentCategory={currentCategory}></Project>
       </main>
       
     </div>
