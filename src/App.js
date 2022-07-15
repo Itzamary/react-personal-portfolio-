@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import Header from './components/Header';
-// import Project from './components/Project';
+import Project from './components/Project';
 import About from './components/About';
 import ContactForm from './components/Contact';
 import Resume from './components/Resume';
@@ -17,10 +17,29 @@ function App() {
   ]);
 
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
-  console.log(currentCategory, 'currentCategoryApp');
+  console.log(currentCategory.name, 'currentCategoryApp');
 
-  const [contactSelected, setContactSelected] = useState();
+  const [contactSelected, setContactSelected] = useState(false);
   
+  function renderCategory(cat) {
+    switch (cat) {
+      case "About Me": 
+        return <About></About>;
+
+      case  "Portfolio": 
+        return <Project currentCategory={currentCategory}></Project>;
+
+      case  "Contact": 
+        return <ContactForm></ContactForm>;
+
+      case  "Resume": 
+        return <Resume></Resume>;
+       
+      default : 
+        return <About></About>
+    }
+
+  }
   return (
     <div>
       <Header
@@ -31,14 +50,9 @@ function App() {
         setContactSelected={setContactSelected}
       ></Header>
       <main>
-        {!contactSelected ? (
-            <>
-              <About currentCategory={currentCategory}></About>
-            </>
-          ) : (
-            <Resume></Resume>
-        )}
-        <ContactForm></ContactForm>
+        <h2>{currentCategory.name}</h2>
+        {renderCategory(currentCategory.name)}
+
       </main>
       
     </div>
