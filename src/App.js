@@ -1,10 +1,15 @@
 import React, {useState} from 'react';
+import { Link } from 'react-router-dom';
 import Header from './components/Header';
 import Project from './components/Project';
 import About from './components/About';
 import ContactForm from './components/Contact';
 import Resume from './components/Resume';
 import './App.css';
+import ghIcon from './assets/footer-icons/github.png';
+import linkedInIcon from './assets/footer-icons/linkedin.png';
+import indeedIcon from './assets/footer-icons/indeed.png';
+
 
 
 function App() {
@@ -54,6 +59,11 @@ function App() {
         {renderCategory(currentCategory.name)}
 
       </main>
+      <footer>
+        <a href='https://github.com/Itzamary'><img src={ghIcon} alt="gihub icon"></img></a>
+        <a href='https://www.linkedin.com/in/itzamary-jimenez1394/?trk=public-profile-join-page'><img src={linkedInIcon} alt="linked in icon"></img></a>
+        <a href='https://my.indeed.com/p/itzamaryj-qvdj2bk'><img src={indeedIcon} alt="indeed icon"></img></a>
+      </footer>
       
     </div>
   );
