@@ -4,7 +4,7 @@ function Resume() {
 
     return(
         <section>
-            <div>indeed resume <a href="https://my.indeed.com/p/itzamaryj-qvdj2bk" target="_blank" rel="noopener noreferrer">download</a></div>
+            <div>indeed resume <a href="https://my.indeed.com/p/itzamaryj-qvdj2bk/pdf" target="_blank" rel="noopener noreferrer">download</a></div>
             <h2>Front-end Proficiencies</h2>
             <ul>
                 <li>HTML5</li>
