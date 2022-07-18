@@ -42,7 +42,7 @@ console.log(currentPhotos, 'current photos');
                 <img
                 src={require(`../../assets/${currentCategory.name}/${i}.png`).default}
                 alt={image.name}
-                className="img-thumbnail mx-1"
+                className="img-thumbnail mx-2"
                 key={image.name}
                 />
             ))}
