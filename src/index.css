@@ -62,12 +62,17 @@ margin:0 30px 0 30px;
 }
 
 main {
-    margin: 0 auto;
+    margin: 10px auto;
     width: 80%;
 }
 
 .my-5 {
     word-wrap: break-word;
+}
+
+#contact-form {
+  text-align: center;
+  background-color: #feece6 ;
 }
 
 .navActive {
@@ -76,8 +81,10 @@ main {
 
 footer {
   text-align: center;
+  margin-top: 10px;
 }
-footer a {
+footer img {
   margin: 0 10px;
+  padding: 10px 0;
 }
 
